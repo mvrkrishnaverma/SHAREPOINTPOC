@@ -1,0 +1,132 @@
+
+.example {
+    position:relative;
+    width:1200px;
+    margin:0px auto;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.menuholder {
+    float:right;
+    font:normal bold 11px/35px verdana, sans-serif;
+    overflow:hidden;
+    position:relative;
+	width:100%;
+	margin-top:20px
+}
+.menuholder .shadow {
+    -moz-box-shadow:0 0 20px rgba(0, 0, 0, 1);
+    -o-box-shadow:0 0 20px rgba(0, 0, 0, 1);
+    -webkit-box-shadow:0 0 20px rgba(0, 0, 0, 1);
+    background:#888;
+ 
+    height:10px;
+    left:5%;
+    position:absolute;
+    top:-11px;
+    width:90%;
+    z-index:100;
+}
+.menuholder .back {
+    -moz-transition-duration:.4s;
+    -o-transition-duration:.4s;
+    -webkit-transition-duration:.4s;
+    height:0;
+    width:100%;
+}
+.menuholder:hover div.back {
+    
+}
+ul.menu {
+    display:block;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0 15px;
+    position:relative;
+	min-height:46px
+}
+ul.menu li {
+    float:left;
+    margin:0 5px 0 0;
+}
+ul.menu li > a {
+  
+    color:#eee;
+    display:block;
+    padding:0 10px;
+    text-decoration:none;
+    transition:all 0.2s ease-in-out;
+	font-family: 'PTSansRegular';
+	font-size:17px;
+	font-weight:normal
+}
+ul.menu li > a:hover { color:#F90}
+.menu li div.subs {
+    left:0;
+    overflow:hidden;
+    position:absolute;
+    top:40px;
+    width:0;
+}
+.menu li div.subs dl {
+    -moz-transition-duration:.2s;
+    -o-transition-duration:.2s;
+    -webkit-transition-duration:.2s;
+    float:left;
+    margin:0 130px 0 0;
+    overflow:hidden;
+    width:50%;
+	margin-left:40%
+}
+.menu dt {
+    color:#fc0;
+    font-family:arial, sans-serif;
+    font-size:12px;
+    font-weight:700;
+    height:20px;
+    line-height:20px;
+    margin:0;
+    padding:0 0 0 10px;
+    white-space:nowrap;
+}
+.menu dd {
+    margin:0;
+    padding:0;
+    text-align:left;
+}
+.menu dd a {
+    background:none!important;
+    color:#e6e7e7;
+    font-size:12px;
+    height:20px;
+    line-height:20px;
+    padding:0 0 0 10px;
+    text-align:left;
+    white-space:nowrap;
+    width:80px;
+	border-bottom:none
+}
+.menu dd a:hover {
+    color:#F90;
+}
+.menu li div.subs dl {
+    -moz-transition-delay:0.2s;
+    -o-transition-delay:0.2s;
+    -webkit-transition-delay:0.2s;
+    margin-right:2%;
+    width:50%%;
+}
+ul.menu li:hover > a,ul.menu li > a:hover {
+    color:#F90;
+    padding:5px 12px 0;
+}
+ul.menu li a:hover,ul.menu li:hover a {
+
+}
+
+.menu li:hover div.subs,.menu li a:hover div.subs {
+    width:100%;
+}

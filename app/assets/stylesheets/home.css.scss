@@ -1,0 +1,177 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@charset "utf-8";
+/* CSS Document */
+*{
+  margin:0;
+  padding:0;
+  border:0px;
+  
+  }
+
+  @font-face {
+        font-family: "FontAwesome";
+        src: url(/assets/FontAwesome.otf) format("truetype");
+    }
+
+/*----------   Body ----------------*/
+body
+{
+    
+    margin:auto;
+    font-size:12px;
+    
+}
+
+
+/*----------   Logo  Starting ----------------*/
+#logo
+{
+  margin-top:38px;
+  background:url(/assets/logo_bg.png) repeat-x;
+  height:76px;
+}
+#logo img
+{
+  margin-left:166px;
+  margin-top:1px;
+}
+/*----------   Logo  Ending ----------------*/
+
+/*----------     Main-Content Starting ----------------*/
+#main-content
+{
+  margin:78px auto 0px auto;
+  width:1022px;
+  height:350px;
+  background:#302f2f; 
+  opacity:0.7;  
+}
+.margins
+{
+  width:443px;
+  margin:28px 34px 0px 34px;
+}
+
+/*----------  Main-Content Ending ----------------*/
+
+/*----------     Summary Starting ----------------*/
+.summary-para{
+  margin-top:29px;
+  color:#969696;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  text-align:justify;
+  
+  }
+.styles{
+  color:#50b3cf;
+  font-weight:200;
+  font-size:20px;
+  font-family:Arial, Helvetica, sans-serif;
+  border-bottom:#484747 1px solid;
+  padding-bottom:30px
+  
+  }
+
+
+/*----------     Summary Ending ----------------*/
+
+/*----------     Login Starting ----------------*/
+#login form
+{
+  margin:30px 0px 0px 73px;
+  width:287px;
+  padding-bottom:30px;
+  color:#9d9d9d;
+}
+.input-user
+{
+  width:245px;
+  height:25px;
+  background:#8c8c8c;
+  margin-bottom:17px; 
+  padding-left:8px;
+  color:#ffffff;  
+}
+.input-img-style
+{
+width:34px;
+height:25px;
+}
+.user-image
+{
+  background:#6e6e6e url(/assets/icons.png) -141px -55px;
+}
+.paswrd-image
+{
+  background:#6e6e6e url(/assets/icons.png) -179px -56px; 
+}
+
+.input-img-style img
+{
+  padding:2px 0px 0px 7px;
+  }
+.checkbox
+{
+  margin-top:10px;
+  background:#b0b0b0;
+  width:13px;
+  height:13px;
+  appearance: none;
+}
+.forgot-password
+{
+  margin:0px 0px 0px 73px;
+  color:#6e6e6e;
+  text-decoration:none;
+  
+}
+#login p{
+  padding-top:25px;
+  }
+#login-form
+{
+  border-bottom:#484747 1px solid;  
+}
+.checkbox-span
+{
+  position:relative;
+  bottom:-9px;
+  margin-left:6px;
+}
+
+.login-btn
+{
+  background:#6db33f url(/assets/KEY.png) no-repeat center left 13px;
+  width:100px;
+  height:30px;
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:400;
+  
+}
+
+
+/*----------     Login Ending ----------------*/
+
+/*----------     footer Starting ----------------*/
+#footer
+{
+  color:#6c6c6c;  
+  margin-top:50px;
+  text-align:center;
+  position:absolute;
+  bottom:10px;
+  left:594px;
+}
+
+
+/*----------     footer Ending ----------------*/
+
+/*---------- Global ----------------*/
+.left{ float:left;}
+.right{ float:right;}
+.clear{ clear:both;}

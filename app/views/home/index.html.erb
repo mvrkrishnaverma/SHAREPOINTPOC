@@ -1,0 +1,31 @@
+<% if user_signed_in? %>
+	<%= render 'share/documents_list' %>
+<% else %>
+	<div id="summary" class="margins left ">
+		<h3 class="styles">Liberty Mutual</h3>
+		<p class="summary-para">Liberty Mutual Group, more commonly known by the name of its primary line of business, Liberty Mutual Insurance, is an American diversified global insurer and the third-largest property and casualty insurer in the United States based on 2012 Property and Casualty direct written premium. It ranks 76th on the Fortune 100 list of largest corporations in the United States based on 2013 revenue.[2] Based in Boston, Massachusetts, it employs over 50,000 people in more than 900 locations throughout the world. </p>
+		<div class="clear"></div>
+	</div>
+	
+	<!-- Login Starting-->
+	<div id="login" class="margins left">
+		<h3 class="styles">Login</h3>
+	     <div id="login-form">
+	     	<%= form_for(:user, :url => session_path(:user)) do |f| %>
+			  <div class="input-img-style user-image left"></div>
+			  <%= f.text_field :email, class: 'input-user left', placeholder: 'Email address', required: 'required' %>
+			  <div class="clear"></div>
+			  <div class="input-img-style paswrd-image left"></div>
+			  <%= f.password_field :password, class: "input-user passwrd", placeholder: "Password", required: "required" %>
+			  <div class="clear"></div>
+			  <%= f.check_box :remember_me, id: 'check', class: 'checkbox left' %>
+			  <%= f.label :remember_me, class: 'checkbox-span' %>
+			  <%= f.submit 'Login', class: 'login-btn right' %>
+			  <div class="clear"></div>
+			<% end %>     	
+	    </div>
+	    <p><a href="" class="forgot-password">Forgot your password? </a></p>
+	</div>
+	<!-- Login Ending-->
+	<div class="clear"></div>
+<% end %>
